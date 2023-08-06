@@ -515,7 +515,6 @@ h4 {
   display: flex;
 }
 
-.footer_form_wrap {}
 
 .label_footer {
   color: #ffffff;
@@ -557,7 +556,6 @@ h4 {
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   cursor: pointer;
   border: none;
   display: flex;
@@ -907,7 +905,9 @@ input {
   fill: transparent;
 }
 
-
+.wrap_chec_iocn:hover{
+border-color: var(--iris);
+}
 
 .modal_chec:checked+.ladel_checbox .wrap_chec_iocn {
   background-color: var(--ocean);
