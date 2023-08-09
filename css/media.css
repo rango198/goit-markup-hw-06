@@ -1,0 +1,6 @@
+@media (min-width: 320px) {
+.skills_list_icon, .title-doing{
+  display: none;
+ 
+}
+}

@@ -22,7 +22,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -53,9 +53,10 @@ h4 {
 /* ---------------------------------------------header---------------------------------- */
 
 .container {
-  width: 1158px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
+  overflow: hidden;
 }
 
 .header {
@@ -64,9 +65,12 @@ h4 {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+
 .container_header {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /*------------------------------------------------ logo---------------------- */
@@ -87,8 +91,54 @@ h4 {
   font-weight: 800;
   font-size: 18px;
   text-transform: uppercase;
-  margin-right: 76px;
+  margin-right: 10px;
   color: var(--ocean);
+}
+
+/* menu-mobile */
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px 0 25px 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--white);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
 }
 
 .logo {
@@ -125,7 +175,7 @@ h4 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current {
+/* .current {
   color: var(--ocean);
 
 }
@@ -142,7 +192,7 @@ h4 {
   height: 4px;
   display: block;
   width: 100%;
-}
+} */
 
 .sidebar_nav:hover,
 .sidebar_nav:focus {
@@ -184,26 +234,28 @@ h4 {
 
 .section_title_main {
   background-color: var(--navyblue);
-  padding: 188px 0;
+      padding: 112px 0 205px 0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
 .title_main {
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 30px;
+  line-height: 1.12;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white);
-  max-width: 496px;
-  margin: auto;
-  margin-bottom: 48px;
+  width: 290px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 71px;
+  
 }
 
 .main_button {
@@ -233,23 +285,30 @@ h4 {
 /*------------------------------------------------ skills------------------------ */
 
 .section_skills {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .skills_list {
   display: flex;
-  gap: 24px;
-  padding: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  /* gap: 24px;
+  padding: 0; */
 }
 
-.list_item {
-  width: calc((100% - 72px) / 4);
+/* .list_item {
+  /* width: calc((100% - 72px) / 4); */
+.list_item{
+margin-bottom: 72px;
 }
 
 .title_skills {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.12;
   letter-spacing: 0.02em;
   color: var(--navyblue);
   margin-bottom: 8px;
@@ -257,6 +316,7 @@ h4 {
 
 .skills_text {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
@@ -318,14 +378,16 @@ h4 {
 
 .list_team {
   display: flex;
-  gap: 24px;
-  padding: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+   padding: 0;
 }
 
 .section_team {
   background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -560,9 +622,9 @@ h4 {
   border: none;
   display: flex;
   transition: box-shadow 0.3s ease;
- }
+}
 
-.footer_button:hover{
+.footer_button:hover {
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -911,8 +973,8 @@ input {
   fill: transparent;
 }
 
-.wrap_chec_iocn:hover{
-border-color: var(--iris);
+.wrap_chec_iocn:hover {
+  border-color: var(--iris);
 }
 
 .modal_chec:checked+.ladel_checbox .wrap_chec_iocn {
