@@ -1,6 +1,42 @@
 @media (min-width: 320px) {
 .skills_list_icon, .title-doing{
   display: none;
- 
+}
+.customers_icon_send{
+padding: 15px 0;
+}
+.customers_icon {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px;
+}
+}
+
+@media (min-width: 428px) {
+.wrapper {
+max-width: 428px;
+}
+.container{
+max-width: 428px;
+}
+.section_title_main{
+max-width: 428px;
+}
+.customers_icon{
+    display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+gap: 72px 15px;
+}
+.customers_icon_list {
+  width: 100%;
+  width: calc((100% - 16px) / 2);
+  
+}
+.customers_icon_send {
+padding: 16px 0;
+width: 100%;
+  height: 100%;
 }
 }
