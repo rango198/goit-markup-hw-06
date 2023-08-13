@@ -46,17 +46,17 @@
           </li>
         </ul>
       </address>
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg class="menu_toggle_icon" width="32" height="22">
-          <use href="./images/icons.svg#icon-paragraph-justify"></use>
-        </svg>
-      </button>
 
-
-
-
-      <!----------------------------- hidden_menu -->
+      <div class="container_logo_btn">
+        <a class="menu_logo link" href="./index.html">Web<span class="logo">Studio</span></a>
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu_toggle_icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-paragraph-justify"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg class="modal_icon_close" width="8" height="8">
@@ -411,58 +411,59 @@
   <!-- footer -->
   <footer class="footer">
     <div class="container container_footer">
-
-      <div class="footer_wrap_item">
-        <a class="footer_menu_logo link" href="./index.html">Web<span class="footer_logo">Studio</span></a>
-        <p class="footer_text">Increase the flow of customers and sales for your business with digital marketing &amp;
-          growth
-          solutions.</p>
-      </div>
-      <div class="social_media">
-        <p class="footer_text">Social media</p>
-        <ul class="social_list list">
-          <li class="social_list_item">
-            <a class="social_list_send" href="">
-              <svg class="section_footer_icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram-2"></use>
+      <div class="wrapper_footer">
+        <div class="footer_wrap_item">
+          <a class="footer_menu_logo link" href="./index.html">Web<span class="footer_logo">Studio</span></a>
+          <p class="footer_text">Increase the flow of customers and sales for your business with digital marketing &amp;
+            growth
+            solutions.</p>
+        </div>
+        <div class="social_media">
+          <p class="footer_text">Social media</p>
+          <ul class="social_list list">
+            <li class="social_list_item">
+              <a class="social_list_send" href="">
+                <svg class="section_footer_icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social_list_item">
+              <a class="social_list_send" href="">
+                <svg class="section_footer_icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social_list_item">
+              <a class="social_list_send" href="">
+                <svg class="section_footer_icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social_list_item">
+              <a class="social_list_send" href="">
+                <svg class="section_footer_icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_form">
+          <p class="footer_form_title">Subscribe</p>
+          <form class="form_social_footer">
+            <label for="email" class="label_footer">
+              <input type="email" id="email" name="email" class="input_footer" placeholder="E-mail">
+            </label>
+            <button type="submit" class="footer_button">Subscribe
+              <svg class="footer_form_icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
               </svg>
-            </a>
-          </li>
-          <li class="social_list_item">
-            <a class="social_list_send" href="">
-              <svg class="section_footer_icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social_list_item">
-            <a class="social_list_send" href="">
-              <svg class="section_footer_icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social_list_item">
-            <a class="social_list_send" href="">
-              <svg class="section_footer_icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer_form">
-        <p class="footer_form_title">Subscribe</p>
-        <form class="form_social_footer">
-          <label for="email" class="label_footer">
-            <input type="email" id="email" name="email" class="input_footer" placeholder="E-mail">
-          </label>
-          <button type="submit" class="footer_button">Subscribe
-            <svg class="footer_form_icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-Frame-3"></use>
-            </svg>
-          </button>
-        </form>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </footer>

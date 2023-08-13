@@ -70,7 +70,9 @@ h4 {
 
 /*------------------------------------------------ logo---------------------- */
 
-
+.menu_nav a {
+  display: block;
+}
 
 .menu_logo {
   font-family: "Raleway", sans-serif;
@@ -257,7 +259,7 @@ h4 {
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/Dark-bg-mob-min.jpg);
   max-width: 320px;
   margin: 0 auto;
 }
