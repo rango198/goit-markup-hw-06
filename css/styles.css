@@ -476,7 +476,7 @@ h4 {
 
 
 .customers_icon_list {
- 
+
   fill: currentColor;
 }
 
@@ -532,11 +532,11 @@ h4 {
 }
 
 .footer_text {
+  width: 264px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
-  max-width: 264px;
   color: #ffffff;
   margin-bottom: 16px;
 }
