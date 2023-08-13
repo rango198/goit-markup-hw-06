@@ -167,7 +167,10 @@
 
   .address_list_iteam a {
     color: var(--slate);
-    font-size: 12px;
+  }
+
+  .address_list_iteam {
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.02em;
@@ -185,7 +188,6 @@
   .section_title_main {
     max-width: 768px;
     padding: 112px 0;
-
   }
 
   .title_main {
@@ -197,9 +199,10 @@
     letter-spacing: 0.02em;
     margin-bottom: 36px;
   }
-    .title_skills{
+
+  .title_skills {
     justify-content: start;
-    }
+  }
 
   .skills_list {
     flex-direction: row;
@@ -242,10 +245,10 @@
     width: 552px;
     margin: 0 auto;
     display: flex;
-      flex-direction: row;
-      gap: 72px 24px;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+    flex-direction: row;
+    gap: 72px 24px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .form_social_footer {
@@ -261,7 +264,90 @@
   .input_footer {
     width: 264px;
   }
-    .footer_form_title{
+
+  .footer_form_title {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .wrapper {
+    max-width: 1158px;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .section_title_main {
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+    .section_skills {
+      padding: 120px 0;
+    }
+    .customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+  .skills_list_icon,
+  .title-doing {
+    display: flex;
+  }
+
+  .title_main {
+    margin-bottom: 48px;
+  }
+
+  .address_list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .menu_list {
+    margin-left: 76px;
+  }
+
+  .skills_list {
+    gap: 24px;
+    padding: 0;
+  }
+
+  .list_item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .wrapper_team {
+    width: 1158px;
+    margin: 0 auto;
+  }
+
+  .list_team {
+    flex-direction: row;
+  }
+
+  .section_team {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .wrapper_customer {
+    width: 1158px;
+    margin: 0 auto;
+  }
+    .customers_icon_list {
+      width: calc((100% - 120px) / 6);
+        height: 88px;
+    }
+  
+    .customers_icon {
+      gap: 72px 24px;
+    }
+  
+    .wrapper_footer{
+    
     }
 }
