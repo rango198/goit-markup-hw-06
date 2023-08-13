@@ -546,15 +546,6 @@ h4 {
   font-weight: 500;
 }
 
-.container_footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 72px;
-  /* align-items: baseline; */
-}
-
-
 
 .social_list {
   display: flex;
