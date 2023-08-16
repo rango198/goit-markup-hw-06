@@ -53,8 +53,6 @@
 
   }
 
-
-
   .footer_menu_logo {
     display: flex;
     justify-content: center;
@@ -65,11 +63,6 @@
     margin: 0 auto;
   }
 
-  /* 
-  .text_social_media {
-    margin-bottom: 15px;
-  } */
-
   .input_footer {
     width: 290px;
   }
@@ -77,17 +70,32 @@
   .social_list {
     justify-content: center;
   }
-     .customers_icon {
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction: row;
-       gap: 72px 15px;
-     }
-  
-     .customers_icon_list {
-       width: 100%;
-       width: calc((100% - 16px) / 2);
-     }
+
+  .customers_icon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 15px;
+  }
+
+  .customers_icon_list {
+    width: 100%;
+    width: calc((100% - 16px) / 2);
+  }
+
+  .porfolio_but_list {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 48px;
+  }
+
+  .title-portfolio {
+    padding: 48px 0;
+  }
+    .portfolio_list_item{
+    width: calc(100% - 15px);
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -183,7 +191,7 @@
     display: flex;
   }
 
- 
+
 
 
 
@@ -492,9 +500,9 @@
     margin: 0 auto;
   }
 
-    .section_title_team{
+  .section_title_team {
     padding: 120px 0;
-    }
+  }
 
   .list_team {
     flex-direction: row;

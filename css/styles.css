@@ -703,16 +703,16 @@ h4 {
 
 .porfolio_but_list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center;
   gap: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 72px; */
 }
 
 .title-portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  /* column-gap: 24px;
+  row-gap: 48px; */
   padding: 0;
 }
 

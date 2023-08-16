@@ -12,7 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+  <link rel="stylesheet" href="./css/media.css">
   <title>Portfolio</title>
 </head>
 
@@ -23,17 +23,17 @@
         <a class="menu_logo link" href="./index.html">Web<span class="logo">Studio</span></a>
         <ul class="menu_list list">
           <li class="menu_list_item">
-            <a class="sidebar_nav link" href="./index.html">Studio</a>
+            <a class="sidebar_nav link current" href="./index.html">Studio</a>
           </li>
           <li class="menu_list_item">
-            <a class="sidebar_nav link current" href="./portfolio.html">Portfolio</a>
+            <a class="sidebar_nav link" href="./portfolio.html">Portfolio</a>
           </li>
           <li class="menu_list_item">
             <a class="sidebar_nav link" href="">Contacts</a>
           </li>
         </ul>
       </nav>
-      <address class="address">
+      <address class="address address_hidden">
         <ul class="address_list list">
           <li class="address_list_iteam">
             <a class="address_menu_contakts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -43,7 +43,77 @@
           </li>
         </ul>
       </address>
+
+      <div class="container_logo_btn">
+        <a class="menu_logo link" href="./index.html">Web<span class="logo">Studio</span></a>
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu_toggle_icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle menu-toggle_close js-close-menu">
+        <svg class="modal_icon_close" width="12" height="12">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu list">
+        <li class="menu_list_item">
+          <a class="sidebar_nav sidebar_nav_one link current" href="./index.html">Studio</a>
+        </li>
+        <li class="menu_list_item">
+          <a class="sidebar_nav link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="menu_list_item">
+          <a class="sidebar_nav link" href="">Contacts</a>
+        </li>
+      </ul>
+      </nav>
+      <div class="menu_addres_social">
+        <address class="mobile-menu address">
+          <ul class="address_list list">
+            <li class="address_list_iteam">
+              <a class="address_menu_contakts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="address_list_iteam_cont">
+              <a class="address_menu_contakts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+        <ul class="social_icon list">
+          <li class="social_icon_list">
+            <a class="social_icon_send" href="">
+              <svg class="section_team_icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social_icon_list">
+            <a class="social_icon_send" href="">
+              <svg class="section_team_icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social_icon_list">
+            <a class="social_icon_send" href="">
+              <svg class="section_team_icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social_icon_list">
+            <a class="social_icon_send" href="">
+              <svg class="section_team_icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
   </header>
 
   <main>
@@ -255,6 +325,12 @@
       </div>
     </div>
   </footer>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
