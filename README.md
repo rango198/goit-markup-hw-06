@@ -1,1 +1,1 @@
-https://rango198.github.io/goit-markup-hw-02/
+https://rango198.github.io/goit-markup-hw-06/
